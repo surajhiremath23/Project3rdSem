@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Game2.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" />
+    <title>Stone Paper Scissor</title>
+</head>
+
+<body>
+    <img class="BG image-fluid" src="./src/IMG/BG-1.jpg" />
+    <div class="container-1 d-flex align-items-center justify-content-center">
+        <h1>Rock Paper Scissor</h1>
+    </div>
+    <div class="container-2">
+        <span class="badge badge-success" id="score">0</span>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-sm-5 panel" id="comPanel">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <img class="mainImg image-fluid" id="comImg" src="./src/IMG/paper1.png" />
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" id="pause-btn" data-toggle="modal"
+                            data-target="#staticBackdrop">
+                            Pause
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 panel">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <img class="mainImg image-fluid " id="userImg" src="./src/IMG/paper2.png" />
+                        <div class="userOpt">
+                            <img class="opt-img" id="rock" src="./src/IMG/rock2.png" alt="">
+                            <img class="opt-img" id="paper" src="./src/IMG/paper2.png" alt="">
+                            <img class="opt-img" id="scissor" src="./src/IMG/scissor2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="GameOver" role="dialog" data-backdrop="static" data-keyboard="false" tabindex="-1">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h4 class="modal-title text-danger">Game Over</h4>
+                    </div>
+                    <div class="modal-body">
+                        <button type="button" class="btn btn-danger my-2" id="reset2"
+                            data-dismiss="modal">Reset</button>
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Pause -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        Game Pause
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-primary my-2" data-dismiss="modal">Resume</button>
+                    <button type="button" class="btn btn-danger my-2" id="reset" data-dismiss="modal">Reset</button>
+                    <button type="button" class="btn btn-success my-2" id="highScore" data-toggle="modal"
+                        data-target="#HS" data-dismiss="modal">High
+                        Score</button>
+
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal hign Score -->
+    <div class="modal fade" id="HS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">High Score</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="dispHS">
+                        <!--High Score List-->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="game2.js"></script>
+</body>
+</body>
+
+</html>

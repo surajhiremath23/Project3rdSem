@@ -1,0 +1,397 @@
+body{
+    background: url(BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+.return{
+    width: 90px;
+    height: 50px;
+    
+}
+.player-0-panel{
+    width: 30%;
+    height: 70%;
+    background-image: url(panel1.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    border-radius: 20%;
+}
+
+.player-1-panel{
+    width: 30%;
+    height: 70%;
+    background-image: url(panel2.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    border-radius: 20%;
+}
+
+.player-1-number{
+    position: relative;
+    top: 68px;
+    padding: 0;
+    margin: 0px;
+    left: 58%;
+    transform: translateX(-50%);
+    width: 127px;
+
+}
+
+button:focus{
+    outline: none;
+}
+
+.playerName{
+    position: absolute;
+    font-family: fantasy;
+    color: crimson;
+    font-size: 30px;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.Score{
+    background-color: azure;
+    height: 20%;
+    width: 50%;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    text-align: center;
+}
+
+.pScore{
+    
+    height: 20%;
+    width: 50%;
+    position: relative;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    text-align: center;
+}
+.red{
+    background-color: red;
+    border-radius: 50%;
+    padding: 0px;
+    margin: 0px;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 120%;
+    bottom: 30%;
+}
+#sidebar{
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 100%;
+    width: 130px;
+    background-color: rosybrown;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20%;
+    display: none;
+    background-image: url(sidebar.jpeg);
+    background-size: cover;
+    font-size: 12px;
+}
+#sidebar.active{
+    display: block;
+}
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 40px;
+    left: -32px;
+    
+}
+#sidebar ul{
+	padding-left: 20px;
+}
+
+.toggle-btn span{
+    display: block;
+    width: 25px;
+    height: 5px;
+    background: #151719;
+    margin: 3px 0px;
+}
+.toggle-btn{
+    position: absolute;
+    left: 93%;
+    top: 50%;
+    transform: translate(-50%,-90%);
+}
+.options{
+    float: top;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#newgame{
+    margin: 5px 0px;
+    width: 68px;
+    padding: 0px;
+    height: 25px;
+    border-radius: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#reset{
+    margin: 5px 0px;
+    width: 68px;
+    padding: 0px;
+    height: 25px;
+    border-radius: 40%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+#alertmsg{
+    color: red;
+    position: absolute;
+    left: 30px;
+    top: -10px;
+    display: none;
+}
+#yourturn{
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translate(-90%,-50%);
+}
+#name{
+    width: 80%;
+    position: relative;
+    left: 15px;
+}
+#comturn{
+    color: crimson;
+    font-size: 20px;
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    width: 150px;
+    
+}
+
+.alert{
+	position: absolute;
+	z-index: 999;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.alert span{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 450px){
+	.alert{
+		display: block;
+    }
+    
+}
+
+@media only screen and (min-width: 1200px){
+	    .player-0-panel{
+    width: 385px;
+    height: 480px;
+    background-image: url(panel1.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    border-radius: 20%;
+}
+.return{
+    width: 100px;
+    height: 100px;
+    margin-left: 90px;
+    margin-top: 400px;
+}
+.player-1-panel{
+    width: 385px;
+    height: 480px;
+    background-image: url(panel2.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    border-radius: 20%;
+}
+
+.player-1-number{
+    position: absolute;
+    top: 400px;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 310px;
+}
+
+button{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    
+}
+button:focus{
+    outline: none;
+}
+
+.playerName{
+    position: absolute;
+    font-family: fantasy;
+    color: crimson;
+    font-size: 30px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.Score{
+    background-color: azure;
+    height: 80px;
+    width: 160px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    text-align: center;
+}
+
+.pScore{
+    
+    height: 80px;
+    width: 160px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    text-align: center;
+}
+.red{
+    background-color: red;
+    border-radius: 50%;
+    padding: 0px;
+    margin: 0px;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 120%;
+    bottom: 30%;
+}
+#sidebar{
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 385px;
+    width: 200px;
+    background-color: rosybrown;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20%;
+    display: none;
+    background-image: url(sidebar.jpeg);
+    background-size: cover;
+    font-size: 20px;
+}
+#sidebar.active{
+    display: block;
+}
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 40px;
+    left: -32px;
+    
+}
+
+.toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #151719;
+    margin: 3px 0px;
+}
+.toggle-btn{
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%,-90%);
+}
+.options{
+    
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#newgame{
+    margin: 5px 0px;
+    width: 68px;
+    padding: 0px;
+    height: 25px;
+    border-radius: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#reset{
+    margin: 5px 0px;
+    width: 68px;
+    padding: 0px;
+    height: 25px;
+    border-radius: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+#alertmsg{
+    color: red;
+    position: absolute;
+    left: 30px;
+    top: -10px;
+    display: none;
+}
+#yourturn{
+    color: crimson;
+    font-size: 40px;
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translate(-90%,-50%);
+}
+}

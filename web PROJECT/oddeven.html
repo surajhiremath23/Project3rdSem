@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>oddEve</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="game.css">
+        
+    </head>
+    <body>
+        <div class="alert"><span>Rotate Your device</span></div>
+        <div id="comturn">It's computers turn to score</div>
+        <div id="yourturn">It's your turn to score</div>
+        <div class="options" id="opt">
+            <table>
+                <tr>
+                    <td><button type="button" id="reset">reset</button></td>
+                </tr>
+                <tr>
+                    <td><div id="alertmsg">Enter Something!!</div></td>
+                </tr>
+                <tr>
+                    <td><input  placeholder="Your name" id="name" class="toHide" ></td>
+                </tr>
+                <tr>
+                    <td><button type="button" id="newgame" class="toHide">Start</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="player-0-panel">
+            <div class="playerName" id="name0">Computer<div class="red" id="red0"></div></div>
+            <div class="Score" id="score-0">0</div>
+            <div class="pScore" id="pScore-0">0</div>
+            <div class="player-1-number">
+                <button type="button" class="bt">1</button>
+                <button type="button" class="bt">2</button>
+                <button type="button" class="bt">3</button>
+                <button type="button" class="bt">4</button>
+                <button type="button" class="bt">5</button>
+                <button type="button" class="bt">6</button>
+            </div>
+            
+        </div>
+        <div class="player-1-panel">
+            <div class="toggle-btn" id="tbtn" onclick="toggleSidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            <div id="sidebar">
+                
+                <ul class="txt">
+                    <li><b>Rules</b></li>
+                    <li>first players turn to score as many runs as possible.</li>
+                    <li>if computer and you get the same number than its computer's turn</li>
+                    <li>you need to stop computer from scoring more runs than you</li>
+                    <li>if computer and you get the same number than you win</li>
+                </ul>
+            </div>
+            <div class="playerName" id="name1"><span id="pname">Player</span><div class="red" id="red1"></div></div>
+            <div class="Score" id="score-1">0</div>
+            <div class="pScore" id="pScore-1">0</div>
+            <div class="player-1-number">
+                <button type="button" class="btn1">1</button>
+                <button type="button" class="btn2">2</button>
+                <button type="button" class="btn3">3</button>
+                <button type="button" class="btn4">4</button>
+                <button type="button" class="btn5">5</button>
+                <button type="button" class="btn6">6</button>
+            </div>
+        </div>
+        
+     
+        <script src="game.js"></script>
+    </body>
+</html>
